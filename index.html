@@ -1,33 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=ù, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcola biglietto del treno</title>
+
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    <main>
-        <div id="generator">
-            <h1>Calcola il prezzo del biglietto</h1>
-    
-            <form id="form">
-                <div class="km">
-                    <input class="data-input" type="number" id="kilometers" name="kilometers"
-                        placeholder="Distanza di viaggio">
-                    <span>km</span>
+    <main id="main" class="container">
+        <div class="row">
+            <h2>calcola il prezzo del tuo biglietto</h2>
+
+            <form class="flex white-block">
+                <div class="flex">
+                    <div>
+                        <label for="name">Nome Cognome</label>
+                        <input id="name" name="name" type="text" placeholder="Come ti chiami?">
+                    </div>
+                    <div>
+                        <label for="km">Km da percorrere</label>
+                        <input id="km" name="km" type="text" placeholder="Quanti chilometri?">
+                    </div>
+                    <div>
+                        <label for="age-span">Fascia d'età</label>
+                        <select name="age-span" id="age-span">
+                            <option value="minorenne">Minorenne</option>
+                            <option value="maggiorenne">Maggiorenne</option>
+                            <option value="over-65">Over 65</option>
+                        </select>
+                    </div>
                 </div>
-                <input class="data-input" type="number" id="age" name="age" placeholder="Quanti anni hai?">
-                <input id="calculate-btn" type="button" onclick="calcTicket()" value="Calcola">
+                <div class="flex" id="buttons">
+                    <button type="button" id="calculate">Calcola</button>
+                    <button type="button" id="cancel">Annulla</button>
+                </div>
             </form>
-    
-            <div class="flex-container">
-                <p class="price-text">Prezzo del biglietto:</p>
-                <strong><p id="result"></p></strong>
+        </div>
+
+
+        <div class="row">
+            <h2>il tuo biglietto</h2>
+            <div id="ticket" class="white-block">
+                <h3>dettaglio passeggero</h3>
+                <div id="final-ticket" class="flex">
+                    <div>
+                        <h5 class="name">nome passeggero</h5>
+                        <p id="passenger-name"></p>
+                    </div>
+                    <div>
+                        <h5>Offerta</h5>
+                        <p id="offer"></p>
+                    </div>
+                    <div>
+                        <h5>Carrozza</h5>
+                        <p id="vagon"></p>
+                    </div>
+                    <div>
+                        <h5>Codice CP</h5>
+                        <p id="cp-code"></p>
+                    </div>
+                    <div>
+                        <h5>Costo biglietto</h5>
+                        <p id="ticket-price"></p>
+                    </div>
+                </div>
             </div>
-            <button id="clear-button">Pulisci</button>
         </div>
     </main>
-    <script type="text/javascript" src="./assets/js/script.js"></script>
+
+    <script src="./assets/js/script.js"></script>
 </body>
+
 </html>

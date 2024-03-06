@@ -2,9 +2,79 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-main {
-    padding-top: 5rem;
-    text-align: center;
-}
+    }
+    
+    body{
+        background-color: #B91550;
+        font-family: sans-serif;
+    }
+    
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        padding: 80px;
+    }
+    
+    h2 {
+        text-transform: uppercase;
+        color: white;
+        margin-bottom: 40px;
+    }
+    
+    h3, .name{
+        text-transform: uppercase;
+    }
+    
+    .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .white-block{
+        background-color: white;
+        padding: 50px 40px;
+        flex-wrap: wrap;
+        border-radius: 30px;
+    }
+    
+    .flex{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+    
+    .buttons{
+        width: 100%;
+    }
+    
+    button{
+        height: 30px;
+        width: 100px;
+        border: 2px solid #B91550;
+        border-radius: 5px;
+        background-color: white;
+    }
+    
+    #final-ticket{
+        border: 1px solid black;
+        border-right: none;
+    }
+    
+    #final-ticket div:first-child{
+        background-color: grey;
+    }
+    
+    #final-ticket div{
+        padding: 15px;
+    }
+    
+    #final-ticket p{
+        margin-top: 15px;
+    }
+    
+    #ticket{
+        display: none;
+    }

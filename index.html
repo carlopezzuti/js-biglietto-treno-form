@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=ù, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <main>
+        <div id="generator">
+            <h1>Calcola il prezzo del biglietto</h1>
+    
+            <form id="form">
+                <div class="km">
+                    <input class="data-input" type="number" id="kilometers" name="kilometers"
+                        placeholder="Distanza di viaggio">
+                    <span>km</span>
+                </div>
+                <input class="data-input" type="number" id="age" name="age" placeholder="Quanti anni hai?">
+                <input id="calculate-btn" type="button" onclick="calcTicket()" value="Calcola">
+            </form>
+    
+            <div class="flex-container">
+                <p class="price-text">Prezzo del biglietto:</p>
+                <strong><p id="result"></p></strong>
+            </div>
+            <button id="clear-button">Pulisci</button>
+        </div>
+    </main>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+</body>
+</html>
